@@ -1,18 +1,18 @@
 
 if ! exists("g:glorious_com_use_ascii")
-    let g:glorious_com_use_ascii = 0
+    let g:glorious_com_use_ascii = 1
 endif
 
 if g:glorious_com_use_ascii
     let s:horizontal = '-'
 
-    let s:horizontal_left = '\'
-    let s:horizontal_right = '/'
-    let s:horizontal_middle = 'v'
+    let s:horizontal_left_up = ''''
+    let s:horizontal_right_up = ''''
+    let s:horizontal_middle_up = '.'
 
-    let s:horizontal_left_down = '/'
-    let s:horizontal_right_down = '\'
-    let s:horizontal_middle_down = '^'
+    let s:horizontal_left_down = '.'
+    let s:horizontal_right_down = '.'
+    let s:horizontal_middle_down = ''''
 else
     let s:horizontal = '─'
 
